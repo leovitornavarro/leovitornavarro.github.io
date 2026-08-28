@@ -1,0 +1,116 @@
+\documentclass[10pt]{article}
+
+\usepackage[letterpaper,top=0.63in,bottom=0.62in,left=0.62in,right=0.62in]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tgpagella}
+\usepackage{microtype}
+\usepackage{enumitem}
+
+\hypersetup{colorlinks=true, urlcolor=black, linkcolor=black}
+\definecolor{sectionred}{RGB}{120,0,0}
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=*,topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt}
+
+\newlength{\datecol}
+\setlength{\datecol}{1.55in}
+\newlength{\gutter}
+\setlength{\gutter}{0.38in}
+\newlength{\bodycol}
+\setlength{\bodycol}{\dimexpr\textwidth-\datecol-\gutter\relax}
+
+\newcommand{\sectioncv}[1]{\vspace{11pt}\noindent\hspace*{\dimexpr\datecol+\gutter\relax}{\large\bfseries\color{sectionred}#1}\par\vspace{5pt}}
+\newcommand{\entry}[2]{\noindent\begin{minipage}[t]{\datecol}\raggedleft #1\end{minipage}\hspace{\gutter}\begin{minipage}[t]{\bodycol}#2\end{minipage}\par\vspace{3.5pt}}
+\newcommand{\tightentry}[2]{\noindent\begin{minipage}[t]{\datecol}\raggedleft #1\end{minipage}\hspace{\gutter}\begin{minipage}[t]{\bodycol}#2\end{minipage}\par\vspace{2pt}}
+
+\begin{document}
+\noindent\hspace*{\dimexpr\datecol+\gutter\relax}\begin{minipage}{\bodycol}
+{\LARGE\bfseries Leo Vitor Navarro}\par\vspace{7pt}
+\href{mailto:navarroleov@gmail.com}{navarroleov [at] gmail [dot] com}\par
+\href{https://leovitornavarro.github.io/}{https://leovitornavarro.github.io/}\par
+\href{http://lattes.cnpq.br/2381672825086246}{http://lattes.cnpq.br/2381672825086246}\par
+\href{https://orcid.org/0000-0003-2678-4934}{https://orcid.org/0000-0003-2678-4934}
+\end{minipage}
+
+\sectioncv{Research Interests}
+\tightentry{Broad:}{Phonology, morphology, morphophonology, Indigenous languages, formal and computational linguistics}\vspace{5pt}
+\tightentry{Narrow:}{Allomorphy, nominal number, morphologically conditioned phonology, Optimality Theory/MaxEnt, experimental phonology, quantitative and computational methods}\vspace{5pt}
+\tightentry{Languages \\ worked on:}{Kadiwéu (Guaicuruan); Brazilian Portuguese (Romance); Toba/Qom (Guaicuruan)}
+
+\sectioncv{Education}
+\entry{2024 -- 2026}{\textbf{Universidade Estadual de Campinas} -- \textit{Campinas, Brazil}\\M.A. in Linguistics\\Thesis: \textit{Plural allomorphy in Kadiwéu / Alomorfia de plural em Kadiwéu}\\Advisor: \textit{Maria Filomena Spatti Sandalo}; FAPESP Master's Fellowship}
+\entry{2025 -- 2026}{\textbf{University of Massachusetts Amherst} -- \textit{Amherst, MA}\\Visiting Researcher, BEPE/FAPESP Research Internship Abroad\\Project: \textit{Long-vowel shortening and nominal stress in Kadiwéu}\\Host advisor: \textit{Michael Becker}}
+\entry{2020 -- 2023}{\textbf{Universidade Estadual de Campinas} -- \textit{Campinas, Brazil}\\B.A. in Linguistics\\Undergraduate project: \textit{Metrical feet in Brazilian Portuguese: a psycho-experimental investigation}\\Advisor: \textit{Maria Filomena Spatti Sandalo}}
+
+\sectioncv{Additional Academic Training}
+\entry{2025}{\textbf{University of Massachusetts Amherst} -- \textit{Amherst, MA}\\Generative Phonology (60 hours)}
+\entry{2020 -- 2023}{\textbf{Universidade Estadual de Campinas} -- \textit{Campinas, Brazil}\\Certificate in Linguistic Advising and Public Language Policy (630 hours)}
+\entry{2020 -- 2022}{\textbf{Universidade Estadual de Campinas} -- \textit{Campinas, Brazil}\\Certificate in Experimental and Computational Methods in Linguistics (600 hours)}
+
+\sectioncv{Awards, Fellowships, and Grants}
+\tightentry{2025 -- 2026}{BEPE/FAPESP Research Internship Abroad Fellowship}
+\tightentry{2024 -- 2026}{FAPESP Master's Fellowship}
+\tightentry{2024}{DAAD-funded academic exchange, \textit{Linguistic Pathways: Collaboration between Universities Brazil-Germany}}
+\tightentry{2022 -- 2023}{CNPq Undergraduate Research Scholarship}
+\tightentry{2021 -- 2022}{SAE/Unicamp Undergraduate Research Scholarship}
+
+\newpage
+\sectioncv{Publications}
+\entry{2026}{Navarro, Leo Vitor. ``A pesquisa: fundamentos gerais.'' In Amanda Macedo Balduino (ed.), \textit{Preciso fazer uma pesquisa, e agora?}, 39--73. Campinas: Pontes Editores.}
+\entry{2023}{Almeida, Anna Carolina de Oliveira, and Leo Vitor Navarro. ``Aquisição de fonologia na fala de gêmeos: processos fonológicos e Teoria da Otimalidade.'' \textit{Língua, Literatura e Ensino} 16:41--58.}
+
+\sectioncv{Manuscripts}
+\entry{2026}{\textit{Pretonic metrical structure in Brazilian Portuguese: Evidence from a click-monitoring experiment.} Manuscript submitted to the \textit{Journal of Portuguese Linguistics}.}
+\entry{2026}{\textit{From collective marking to plural exponence in Toba/Qom.} Manuscript submitted to \textit{Caderno de Squibs}.}
+\entry{2026}{\textit{Empréstimos coloniais e gramática nominal em línguas guaicuruanas: o português no Kadiwéu em perspectiva comparativa.} Manuscript submitted to \textit{Letrônica}.}
+\entry{2026}{\textit{Morphologically conditioned vowel shortening in Kadiwéu plural formation.} Manuscript.}
+\entry{2026}{\textit{Prominence preservation and phonological adaptation of Brazilian Portuguese loanwords in Kadiwéu.} Manuscript.}
+
+\sectioncv{Selected Presentations}
+\entry{2026 -- forthcoming}{\textit{Pretonic metrical structure in Brazilian Portuguese: a click-monitoring experiment.} Segundo Encuentro de Lingüística Experimental (ELEX 2026), Universidad Nacional Autónoma de México, Mexico City.}
+\entry{2026}{\textit{Encurtamento vocálico e condicionamento morfológico em Kadiwéu.} 71º Seminário do GEL, Araraquara.}
+\entry{2026}{\textit{Descrição e modelagem de empréstimos do português brasileiro no Kadiwéu (família Guaikuru).} 14º Congresso Internacional da Abralin (InterAB).}
+\entry{2026}{\textit{Encurtamento vocálico e condicionamento morfológico em Kadiwéu.} VII Colóquio Brasileiro de Morfologia (CBM7), Universidade Federal do Rio Grande do Sul.}
+\entry{2024}{\textit{A alomorfia de plural na língua Kadiwéu.} 70º Seminário do GEL, Universidade Estadual de Campinas.}
+\entry{2023}{\textit{Pés métricos no português brasileiro: uma adaptação do método de click-monitoring.} 69º Seminário do GEL; XXXI Congresso de Iniciação Científica da Unicamp.}
+\entry{2023}{Almeida, Anna Carolina de Oliveira, and Leo Vitor Navarro. \textit{Aquisição de fonologia na fala de gêmeos: processos fonológicos e Teoria da Otimalidade.} 69º Seminário do GEL.}
+\entry{2022}{\textit{Pés métricos no português brasileiro: uma investigação psico-experimental.} XXX Congresso de Iniciação Científica da Unicamp; 18º Seminário de Pesquisas da Graduação (SePeG).}
+\entry{2022}{Almeida, Anna Carolina de Oliveira, and Leo Vitor Navarro. \textit{Processos fonológicos na fala de gêmeos em fase de aquisição do português brasileiro.} 18º Seminário de Pesquisas da Graduação (SePeG).}
+
+\newpage
+\sectioncv{Research Experience}
+\entry{2025 -- 2026}{\textbf{Visiting Researcher, Long-vowel shortening and nominal stress in Kadiwéu}\\Prof. Michael Becker -- Department of Linguistics, University of Massachusetts Amherst\\Research on Kadiwéu long-vowel shortening, nominal stress, acoustic analysis, and formal modeling.}
+\entry{2024 -- 2026}{\textbf{Master's Researcher, Plural allomorphy in Kadiwéu}\\Prof. Maria Filomena Spatti Sandalo -- Institute of Language Studies, Universidade Estadual de Campinas\\Research on Kadiwéu nominal paradigms, plural allomorphy, gender, semantics, and morphophonology.}
+\entry{2023 -- Present}{\textbf{Research Member, Digital Annotated Corpora of Brazilian Indigenous Languages with Automatic Translations (DACILAT)}\\Prof. Maria Filomena Spatti Sandalo -- Universidade Estadual de Campinas\\Digital corpora and automatic translation project for Brazilian Indigenous languages.}
+\entry{2021 -- 2023}{\textbf{Undergraduate Researcher, Metrical feet in Brazilian Portuguese}\\Prof. Maria Filomena Spatti Sandalo -- Universidade Estadual de Campinas\\Experimental research on pretonic prosodic organization in Brazilian Portuguese, including click-monitoring.}
+
+\sectioncv{Teaching Experience}
+\entry{2024}{\textbf{Teaching Intern, Language Acquisition}\\Prof. Pablo Faria -- Institute of Language Studies, Universidade Estadual de Campinas}
+\entry{2023}{\textbf{Teaching Assistant, Phonetics, Phonology and Morphology}\\Prof. Plínio Almeida Barbosa and Prof. Maria Filomena Spatti Sandalo -- Universidade Estadual de Campinas}
+\entry{2023}{\textbf{Teaching Assistant, Models of Phonological Analysis}\\Prof. Maria Filomena Spatti Sandalo -- Universidade Estadual de Campinas}
+\entry{2021 -- 2022}{\textbf{Teaching Assistant, Phonetics and Phonology}\\Prof. Maria Filomena Spatti Sandalo -- Universidade Estadual de Campinas}
+
+\sectioncv{Service and Leadership}
+\entry{2023 -- Present}{\textbf{Faísca Científica} -- Institute of Language Studies, Universidade Estadual de Campinas\\Tutor and extension-project member in scientific literacy and academic writing.}
+\entry{2024}{\textbf{Linguistic Pathways: Collaboration between Universities Brazil-Germany}\\Student organizer in a DAAD-funded academic group visit to Germany.}
+\entry{2022 -- 2024}{\textbf{Unicamp de Portas Abertas} -- Universidade Estadual de Campinas\\Organizer, Phonology and Morphology Room.}
+
+\sectioncv{Other Experience}
+\tightentry{2023}{\textbf{Editora da Unicamp} -- Editorial Intern, Campinas, Brazil}
+\tightentry{2020 -- 2021}{\textbf{Odisseia Consultoria Literária e Linguística} -- Volunteer, Translation and Editorial Services}
+
+\sectioncv{Languages}
+\noindent\hspace*{\dimexpr\datecol+\gutter\relax}Brazilian Portuguese (native)\par\vspace{2pt}
+\noindent\hspace*{\dimexpr\datecol+\gutter\relax}English (fluent)\par\vspace{2pt}
+\noindent\hspace*{\dimexpr\datecol+\gutter\relax}Spanish (reading/working knowledge)\par
+
+\sectioncv{Skills}
+\tightentry{Coding}{Python, R}
+\tightentry{Research methods}{Corpus linguistics, experimental design, statistical analysis, acoustic analysis}
+\tightentry{Software}{\LaTeX, Praat, ELAN, Audacity, Excel, Google Sheets}
+
+\end{document}
